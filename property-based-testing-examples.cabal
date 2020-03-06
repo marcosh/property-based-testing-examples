@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: c54c2f7da892a5dc4a1546cc5698612f925d52b66b89f04f980a835f96e00b2e
+-- hash: 73e7d6cbf3dfb19ac5673dfeb2add132b57b986c52ca5c0cad75da875c858368
 
 name:           property-based-testing-examples
 version:        0.1.0.0
@@ -28,9 +28,11 @@ test-suite sort-prop-test
   hs-source-dirs:
       test
   build-depends:
-      QuickCheck
+      Fin
+    , QuickCheck
     , base >=4.7 && <5
     , extra
     , hspec
+    , peano
     , safe
   default-language: Haskell2010

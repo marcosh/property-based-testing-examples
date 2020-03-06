@@ -20,6 +20,8 @@ tests:
     source-dirs: test
     dependencies:
       - extra
+      - Fin
       - hspec
+      - peano
       - QuickCheck
       - safe
