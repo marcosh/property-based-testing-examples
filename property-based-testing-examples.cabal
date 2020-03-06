@@ -4,12 +4,12 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: f3a0c9954ff9fb5aa75eac9b65e939bb74821c43a465cb7033aa5f780624e015
+-- hash: c54c2f7da892a5dc4a1546cc5698612f925d52b66b89f04f980a835f96e00b2e
 
-name:           sort-prop
+name:           property-based-testing-examples
 version:        0.1.0.0
 category:       Web
-homepage:       https://github.com/marcosh/sort-prop#readme
+homepage:       https://github.com/marcosh/property-based-testing-examples.git
 author:         Marco Perone
 maintainer:     pasafama@gmail.com
 copyright:      2020 Marco Perone
@@ -24,7 +24,7 @@ test-suite sort-prop-test
   main-is: Spec.hs
   other-modules:
       SortSpec
-      Paths_sort_prop
+      Paths_property_based_testing_examples
   hs-source-dirs:
       test
   build-depends:
