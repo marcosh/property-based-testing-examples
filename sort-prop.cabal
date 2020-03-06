@@ -1,0 +1,36 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.1.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: f3a0c9954ff9fb5aa75eac9b65e939bb74821c43a465cb7033aa5f780624e015
+
+name:           sort-prop
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/marcosh/sort-prop#readme
+author:         Marco Perone
+maintainer:     pasafama@gmail.com
+copyright:      2020 Marco Perone
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+test-suite sort-prop-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      SortSpec
+      Paths_sort_prop
+  hs-source-dirs:
+      test
+  build-depends:
+      QuickCheck
+    , base >=4.7 && <5
+    , extra
+    , hspec
+    , safe
+  default-language: Haskell2010
